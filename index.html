@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="text-center mt-8">
+        <input type="text" placeholder="Your Name" class="input input-bordered input-accent w-full max-w-xs" id="input-name" />
+        <button class="btn btn-error" onclick="receiveData('input-name')">Send</button>
+        <button class="btn btn-secondery">Delete</button>
+        <br><br>
+        <input type="email" placeholder="Your Email" class="input input-bordered input-accent w-full max-w-xs" id="input-mail" />
+        <button class="btn btn-error" onclick="receiveData('input-mail')">Send</button>
+        <button class="btn btn-secondery">Delete</button>
+        
+        <br><br>
+        <input type="text" placeholder="Your Address" class="input input-bordered input-accent w-full max-w-xs" id="input-address" />
+        <button class="btn btn-error" onclick="receiveData('input-address')">Send</button>
+        <button class="btn btn-secondery">Delete</button>
+    
+        <br><br>
+        <input type="password" placeholder="Your password" class="input input-bordered input-accent w-full max-w-xs" id="input-password" />
+        <button class="btn btn-error" onclick="receiveData('input-password')">Send</button>
+        <button class="btn btn-secondery">Delete</button>
+        <br><br><br>
+        <button class="btn btn-primary" onclick="sendAllToLocal()">Send ALL</button>
+    </div>
+
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
